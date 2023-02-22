@@ -1,0 +1,42 @@
+{% include "header.html" %}
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url({{ url_for('static', filename='img/about-bg.jpg')}})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>About Me</h1>
+            <span class="subheading">This is what I do.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <style>
+      .container {
+        text-align: center;
+      }
+    </style>
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="middle-container" class="center">
+        <div class="profile">
+        <img src="static/assets/images/jennyround.png" alt="Jenny Profile photo">
+        <h2>Hi there, I am Jenny.</h2>
+        <p class="intro">Welcome and thank you for visiting my website.</p>
+          <p>I am a Web Developer. I am a driven individual when it comes to learning new things and I use that knowledge to build cool stuff with it.</p>
+          <p class="intro"> In my free time, I ❤️ yoga and travel.</p>
+        </div>
+</div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  {% include "footer.html" %}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JENNY CHEN</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="static/assets/css/main.css"/>
+    <link rel="icon" href="static/assets/images/favicon.ico">
+    <noscript>
+        <link rel="stylesheet" href="static/assets/css/noscript.css"/>
+    </noscript>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet"
+          type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet'
+          type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+          rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="{{ url_for('static', filename='css/clean-blog.min.css')}}" rel="stylesheet">
+
+</head>
+
+<header>
+
+<!-- Navigation -->
+<header class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="{{url_for('home')}}">JENNY CHEN</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('portfolio') }}">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<!-- Page Header -->
+<div class="masthead"
+     style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80')">
+    <body class="is-preload">
+        <div id="wrapper">
+            <div id="bg"></div>
+            <div id="overlay"></div>
+            <div id="main">
+
+                <!-- Header -->
+                <header id="header">
+                    <img src="static/assets/images/jenny.png" alt="Jenny Profile photo">
+                    <h1 style="color:white">Jenny Chen</h1>
+                    <p style="color:white">WEB DEVELOPER</p>
+                    <nav>
+                        <ul>
+                            <li><a href="https://twitter.com/jenny_chen2023" class="icon brands fa-twitter" style="color:white"><span
+                                    class="label">Twitter</span></a></li>
+                            <li><a href="https://www.facebook.com/chen.feng.1042"
+                                   class="icon brands fa-facebook-f"style="color:white"><span class="label" >Facebook</span></a></li>
+                            <li><a href="https://dribbble.com/jennychen2102" class="icon brands fa-dribbble" style="color:white"><span
+                                    class="label">Dribbble</span></a></li>
+                            <li><a href="https://github.com/jennychen22" class="icon brands fa-github" style="color:white"><span
+                                    class="label">Github</span></a></li>
+                            <li><a href="mailto:Jenny.chen2102@email.com" class="icon solid fa-envelope"style="color:white"><span
+                                    class="label">Email</span></a></li>
+                        </ul>
+                    </nav>
+                </header>
+
+
+            </div>
+        </div>
+        <script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+
+
+        </script>
+    </body>
+</div>
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="{{ url_for('static', filename='vendor/jquery/jquery.min.js')}}"></script>
+<script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+
+<!-- Custom scripts for this template -->
+<script src="{{ url_for('static', filename='js/clean-blog.min.js')}}"></script>
+<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+
+</script>
+
+</header>
+<!-- Footer -->
+<footer id="footer">
+    <span class="copyright">&copy; 2023 Jenny Chen. Design: <a href="http://html5up.net">HTML5 UP</a>.</span>
+</footer>
+</html>
